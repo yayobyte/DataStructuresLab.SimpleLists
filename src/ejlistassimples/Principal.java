@@ -1,35 +1,56 @@
 package ejlistassimples;
 
+import javax.swing.JOptionPane;
 
 public class Principal {
 
     public static void main(String[] args) {
 
-        ListaS list = new ListaS();
+        /*
+        SimpleList list = new SimpleList();
 
-        list.addLast(5);
-        list.addLast(10);
-        list.addLast(15);
+        list.addNode(5);
+        list.addNode(10);
+        list.addNode(15);
 
-        list.tamano();
-        list.imprimir();
+        JOptionPane.showMessageDialog(null, list.toString());
 
-        list.deleteLast();
+        JOptionPane.showMessageDialog(null, "Elemento Eliminado: " + list.deleteLastNode());
 
-        list.tamano();
-        list.imprimir();
+        JOptionPane.showMessageDialog(null,list.toString());
         
-        list.deleteLast();
+        JOptionPane.showMessageDialog(null, "Elemento Eliminado: " + list.deleteLastNode());
         
-        list.tamano();
-        list.imprimir();
+        JOptionPane.showMessageDialog(null,list.toString());
         
-        list.deleteLast();
+        JOptionPane.showMessageDialog(null, "Elemento Eliminado: " + list.deleteLastNode());
         
-        list.tamano();
-        list.imprimir();
+        JOptionPane.showMessageDialog(null,list.toString());
         
-        list.deleteLast();
+        JOptionPane.showMessageDialog(null, "Elemento Eliminado: " + list.deleteLastNode());
+*/        
+
+        Cola col = new Cola(3);
+
+        JOptionPane.showMessageDialog(null, col.toString());
+
+        col.push(3);
+        JOptionPane.showMessageDialog(null, col.toString());
+
+        col.push(4);
+        JOptionPane.showMessageDialog(null, col.toString());
+
+        col.push(5);
+        JOptionPane.showMessageDialog(null, col.toString());
+
+        col.pop();
+        JOptionPane.showMessageDialog(null, col.toString());
+
+        col.pop();
+        JOptionPane.showMessageDialog(null, col.toString());
+
+        col.pop();
+        JOptionPane.showMessageDialog(null, col.toString());
 
     }
 }
