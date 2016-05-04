@@ -58,7 +58,6 @@ public class SimpleList {
                 while(current.rightNode != this.last) {
                     current = current.rightNode;
                 }
-                //eliminar = actual.nodoDer;
                 data = current.rightNode.data;
                 current.rightNode = null;
                 this.last = current;
@@ -73,7 +72,7 @@ public class SimpleList {
         if(this.size != 0) {
             Node temp = this.first;
             for(int i = 0; i < this.size; i++) {
-                text = text + temp.data + "\n";
+                text = text + "list["+i+"]= " + temp.data + "\n";
                 temp = temp.rightNode;
             }
         }

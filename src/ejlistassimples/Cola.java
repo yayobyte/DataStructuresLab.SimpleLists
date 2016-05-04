@@ -46,7 +46,6 @@ public class Cola {
         }
     }
     
-    
     public String toString() {
         String text = "Cantidad elementos ("+ (this.end - this.front) +") Values: \n";
         if(this.front == this.end) {
